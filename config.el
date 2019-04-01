@@ -1,7 +1,5 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
-;; Place your private configuration here
-
 ;; About me
 (setq user-full-name "Jing Yen Loh"
       user-mail-address "lohjingyen@gmail.com")
@@ -20,12 +18,32 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Org
-(setq org-directory "~/Nextcloud/Documents/org/"
-      +org-capture-todo-file "Inbox.org"
+(after! org
+  (setq org-directory "~/Nextcloud/Documents/org/")
+  (setq +org-capture-todo-file "Inbox.org"
+        org-agenda-files (list "~/Nextcloud/Documents/org")
 
-      org-refile-targets '(("Next.org" :level . 0)
-                           ("Someday.org" :level . 0)
-                           ("Projects.org" :maxlevel . 9)))
+        ;; Refiling
+        org-refile-use-outline-path 'file
+        org-outline-path-complete-in-steps nil
+        org-refile-allow-creating-parent-nodes 'confirm
+        org-refile-targets '(("Next.org" :level . 0)
+                             ("Someday.org" :level . 0)
+                             ("Projects.org" :maxlevel . 9))
+
+        ;; Capturing
+        org-capture-templates
+        `(("i" "Inbox" entry
+           (file "~/Nextcloud/Documents/org/Inbox.org")
+           "* TODO %?")
+          ("w" "Weekly Review" entry
+           (file+olp+datetree "~/Nextcloud/Documents/org/Reviews.org")
+           (file "~/Nextcloud/Documents/org/templates/WeeklyReview.org")))
+
+        ;; Logging
+        org-log-done 'time
+        org-log-into-drawer t))
+
 ;; Alerts
 (load! "+alert") ;; Testing out org-alert
 
