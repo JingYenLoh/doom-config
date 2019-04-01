@@ -23,4 +23,8 @@
       org-refile-targets '(("Next.org" :level . 0)
                            ("Someday.org" :level . 0)
                            ("Projects.org" :maxlevel . 9)))
+;; Alerts
+(load! "+alert") ;; Testing out org-alert
 
+;; Popups
+(load! "+popups")
