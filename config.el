@@ -11,7 +11,10 @@
       +default-repeat-keys (cons ";" "'")
 
       display-line-numbers-type 'relative
-      evil-escape-key-sequence "fd")
+      evil-escape-key-sequence "fd"
+
+      evil-snipe-scope 'visible
+      evil-snipe-repeat-scope 'visible)
 
 ;; Start Emacs maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
