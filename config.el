@@ -42,7 +42,13 @@
 
         ;; Logging
         org-log-done 'time
-        org-log-into-drawer t))
+        org-log-into-drawer t)
+
+  (map! :map evil-org-mode-map
+        :localleader
+        :desc "Archive"  "a" #'org-archive-subtree-default-with-confirmation
+        :desc "Refile"   "r" #'org-refile
+        :desc "Schedule" "s" #'org-schedule))
 
 ;; Alerts
 (load! "+alert") ;; Testing out org-alert
