@@ -12,10 +12,11 @@
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
-       company           ; the ultimate code completion backend
+       (company          ; the ultimate code completion backend
+        +childframe)
        ;;helm             ; the *other* search engine for love and life
        ;;ido              ; the other *other* search engine...
-       ivy              ; a search engine for love and life
+       ivy               ; a search engine for love and life
 
        :ui
        ;;deft              ; notational velocity for Emacs
@@ -64,7 +65,8 @@
        ;;docker
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
-       flycheck          ; tasing you for every semicolon you forget
+       (flycheck         ; tasing you for every semicolon you forget
+        +childframe)
        ;;flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
        lsp
