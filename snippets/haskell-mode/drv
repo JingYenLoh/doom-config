@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: deriving
+# key: drv
+# --
+deriving ($0)
