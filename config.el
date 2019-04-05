@@ -42,6 +42,8 @@
 
         ;; Logging
         org-log-done 'time
+        org-log-redeadline 'note
+        org-log-reschedule 'note
         org-log-into-drawer t)
 
   (map! :map evil-org-mode-map
