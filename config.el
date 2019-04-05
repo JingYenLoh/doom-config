@@ -50,7 +50,11 @@
         :localleader
         :desc "Archive"  "a" #'org-archive-subtree-default-with-confirmation
         :desc "Refile"   "r" #'org-refile
-        :desc "Schedule" "s" #'org-schedule))
+        :desc "Schedule" "s" #'org-schedule
+
+        :prefix "i"
+        :desc "set property" "p" #'org-set-property))
+
 
 ;; Alerts
 (load! "+alert") ;; Testing out org-alert
