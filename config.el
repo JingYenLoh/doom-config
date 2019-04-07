@@ -57,10 +57,6 @@
         :prefix "i"
         :desc "set property" "p" #'org-set-property))
 
-
-;; Alerts
-(load! "+alert") ;; Testing out org-alert
-
 ;; Popups
 (load! "+popups")
 
