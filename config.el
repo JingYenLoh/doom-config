@@ -8,6 +8,8 @@
 (setq doom-localleader-key ","
       +default-repeat-keys (cons ";" "'")
 
+      doom-theme 'doom-peacock
+
       display-line-numbers-type 'relative
       evil-escape-key-sequence "fd"
 
