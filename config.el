@@ -9,6 +9,7 @@
       +default-repeat-keys (cons ";" "'")
 
       doom-theme 'doom-peacock
+      doom-modeline-buffer-file-name-style 'relative-from-project
 
       display-line-numbers-type 'relative
       evil-escape-key-sequence "fd"
