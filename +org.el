@@ -40,7 +40,11 @@
         org-log-done 'time
         org-log-redeadline 'note
         org-log-reschedule 'note
-        org-log-into-drawer t)
+        org-log-into-drawer t
+
+        ;; UI
+        org-tags-column 80
+        org-agenda-tags-column 80)
 
   (map! :map evil-org-mode-map
         :localleader
