@@ -1,5 +1,15 @@
 ;;; ~/.doom.d/+org.el -*- lexical-binding: t; -*-
 
+(defun +org|setup-popup-rules ()
+  "Defines popup rules for org-mode (does nothing if :ui popup is disabled)."
+  (set-popup-rules!
+    '(("^\\*Org Links" :slot -1 :vslot -1 :size 2 :ttl 0)
+      ("^\\*\\(?:Agenda Com\\|Calendar\\|Org \\(?:Export Dispatcher\\|Select\\)\\)"
+       :slot -1 :vslot -1 :size #'+popup-shrink-to-fit :ttl 0)
+      ("^\\*Org Agenda"    :size 90 :side right :select t :ttl nil)
+      ("^\\*Org Src"       :size 0.4 :quit nil :select t :autosave t :ttl nil)
+      ("^CAPTURE.*\\.org$" :size 90 :side right :quit nil :select t :autosave t))))
+
 ;; Org
 (after! org
   (setq org-directory "~/Nextcloud/Documents/org/")
@@ -39,8 +49,4 @@
         :desc "Schedule" "s" #'org-schedule
 
         :prefix "i"
-        :desc "set property" "p" #'org-set-property)
-
-  (set-popup-rules!
-    '(("^\\*Org Agenda.*" :slot -1 :size 90 :side right :select t)
-      ("^CAPTURE.*\\.org$" :size 90 :side right :quit nil :select t :autosave t))))
+        :desc "set property" "p" #'org-set-property))
