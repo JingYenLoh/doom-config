@@ -24,11 +24,3 @@
 (load! "+popups")
 (load! "+org")
 
-;; Calendar
-(setq org-caldav-url "https://cloud.nigelhao.me/remote.php/dav/calendars/francis"
-      org-caldav-calendar-id "org"
-      org-caldav-inbox "~/Nextcloud/Documents/org/Calendar.org"
-      org-caldav-files '("~/Nextcloud/Documents/org/Projects.org"
-                         "~/Nextcloud/Documents/org/Next.org")
-      org-caldav-skip-conditions '(nottimestamp)
-      org-icalendar-timezone "Asia/Singapore")
