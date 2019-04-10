@@ -48,9 +48,7 @@
 
   (map! :map evil-org-mode-map
         :localleader
-        :desc "Archive"  "a" #'org-archive-subtree-default-with-confirmation
-        :desc "Refile"   "r" #'org-refile
-        :desc "Schedule" "s" #'org-schedule
+        :desc "Archive" "a" #'org-archive-subtree-default-with-confirmation
 
         :prefix "i"
         :desc "set property" "p" #'org-set-property))
