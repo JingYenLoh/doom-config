@@ -85,7 +85,6 @@
 
        :lang
        ;;assembly          ; assembly for fun or debugging
-       (cc +irony +rtags); C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -133,6 +132,7 @@
        ;;swift             ; who asked for emoji variables?
        web               ; the tubes
        ;;vala              ; GObjective-C
+       (cc +lsp)
 
        ;; Applications are complex and opinionated modules that transform Emacs
        ;; toward a specific purpose. They may have additional dependencies and
