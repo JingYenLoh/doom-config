@@ -109,7 +109,7 @@
        ;;lua
        markdown
        ;;nim
-       nix
+       ;; nix
        ;;ocaml
        (org
         +attach
