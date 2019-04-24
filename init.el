@@ -23,13 +23,13 @@
        doom
        doom-dashboard
        ;; doom-quit
-       evil-goggles
        ;;fci
        hl-todo
        ;;indent-guides
        modeline
        nav-flash
        ;;neotree
+       ophints
        treemacs
        (popup
         +all
