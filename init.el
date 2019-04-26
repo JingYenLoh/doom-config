@@ -1,17 +1,7 @@
 ;;; init.el -*- lexical-binding: t; -*-
 ;; Copy me to ~/.doom.d/init.el or ~/.config/doom/init.el, then edit me!
 
-(doom! :feature
-       ;;debugger
-       eval
-       (evil +everywhere)
-       file-templates
-       (lookup
-        +docsets)
-       snippets
-       workspaces
-
-       :completion
+(doom! :completion
        (company
         +childframe)
        ;;helm
@@ -40,14 +30,18 @@
        vc-gutter
        vi-tilde-fringe
        window-select
+       workspaces
 
        :editor
+       (evil +everywhere)
+       file-templates
        fold
        ;;(format +onsave)
        ;;lispy
        multiple-cursors
        ;;parinfer
        rotate-text
+       snippets
 
        :emacs
        (dired
@@ -62,13 +56,17 @@
 
        :tools
        ;;ansible
+       ;;debugger
        docker
        editorconfig
+       eval
        ;;ein
        (flycheck
         +childframe)
        ;;flyspell
        ;;gist
+       (lookup
+        +docsets)
        lsp
        ;;macos
        magit
