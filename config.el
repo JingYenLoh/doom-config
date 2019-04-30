@@ -33,3 +33,6 @@
 
       web-mode-auto-close-style 1)
 
+;; Use // single line comments instead of /*
+(add-hook 'c-mode-hook
+  (λ! () (c-toggle-comment-style -1)))
