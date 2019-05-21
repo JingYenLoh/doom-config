@@ -25,13 +25,17 @@
 (load! "+org")
 
 ;; Web
-(setq web-mode-indent-style 2
-      web-mode-css-indent-offset 2
-      web-mode-markup-indent-offset 2
-      web-mode-code-indent-offset 2
-      css-indent-offset 2
+(after! web-mode
+  (setq web-mode-indent-style 2
+        web-mode-markup-indent-offset 2
+        web-mode-code-indent-offset 2
+        css-indent-offset 2
 
-      web-mode-auto-close-style 1)
+        web-mode-auto-close-style 1))
+
+(after! js2-mode
+  (setq js-indent-level 2
+        sgml-basic-offset 2))
 
 ;; Use // single line comments instead of /*
 (add-hook 'c-mode-hook
