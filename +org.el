@@ -42,7 +42,10 @@
         :desc "Archive" "a" #'org-archive-subtree-default-with-confirmation
 
         :prefix "i"
-        :desc "set property" "p" #'org-set-property)
+        :desc "set property" "p" #'org-set-property
+
+        :prefix "e"
+        "e" #'org-export-dispatch)
 
   (set-popup-rules!
     '(("^\\*Org Links" :slot -1 :vslot -1 :size 2 :ttl 0)
