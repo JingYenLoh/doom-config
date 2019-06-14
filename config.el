@@ -40,3 +40,7 @@
 ;; Use // single line comments instead of /*
 (add-hook 'c-mode-hook
   (λ! () (c-toggle-comment-style -1)))
+
+(map! :leader
+      :prefix "o"
+      "c" #'calc)
