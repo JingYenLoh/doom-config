@@ -54,3 +54,6 @@
       ("^\\*Org Agenda"    :size 90 :side right :select t :ttl nil)
       ("^\\*Org Src"       :size 0.4 :quit nil :select t :autosave t :ttl nil)
       ("^CAPTURE.*\\.org$" :size 90 :side right :quit nil :select t :autosave t))))
+
+(advice-add #'org-agenda-quit :before #'org-save-all-org-buffers)
+(advice-add 'org-deadline :after 'org-save-all-org-buffers)
