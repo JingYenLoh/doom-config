@@ -1,7 +1,11 @@
 ;;; init.el -*- lexical-binding: t; -*-
 ;; Copy me to ~/.doom.d/init.el or ~/.config/doom/init.el, then edit me!
 
-(doom! :completion
+(doom! :input
+       ;;chinese
+       ;;japanese
+
+       :completion
        (company
         +childframe)
        ;;helm
@@ -9,21 +13,22 @@
        ivy
 
        :ui
-       ;;deft
+       deft
        doom
        doom-dashboard
        ;; doom-quit
-       ;;fci
+       ;;fill-column
        hl-todo
+       hydra
        ;;indent-guides
        modeline
        nav-flash
        ;;neotree
        ophints
-       treemacs
        (popup
         +all
         +defaults)
+       treemacs
        ;;pretty-code
        ;;tabbar
        ;;unicode
@@ -39,9 +44,11 @@
        ;;(format +onsave)
        ;;lispy
        multiple-cursors
+       ;; objed
        ;;parinfer
        rotate-text
        snippets
+       ;; word-wrap
 
        :emacs
        (dired
@@ -49,18 +56,22 @@
        ;;+icons
         )
        electric
-       ;;eshell
-       imenu
-       term
        vc
+
+       :term
+       ;;eshell
+       ;;shell
+       term
+       vterm
 
        :tools
        ;;ansible
        ;;debugger
+       ;;direnv
        docker
        editorconfig
-       eval
        ;;ein
+       eval
        (flycheck
         +childframe)
        ;;flyspell
@@ -71,7 +82,7 @@
        ;;macos
        magit
        ;;make
-       password-store
+       pass
        ;;pdf
        ;;prodigy
        ;;rgb
@@ -79,9 +90,9 @@
        ;;tmux
        ;;upload
        ;;wakatime
-       vterm
 
        :lang
+       ;;agda
        ;;assembly
        (cc +lsp)
        ;;clojure
@@ -110,10 +121,9 @@
        ;; nix
        ;;ocaml
        (org
-        +attach
-        +babel
-        +capture
-        +export
+        +dragndrop
+        +ipython
+        +pandoc
         +present)
        ;;perl
        ;;php
