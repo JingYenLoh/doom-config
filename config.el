@@ -44,3 +44,6 @@
 (map! :leader
       :prefix "o"
       "c" #'calc)
+
+;; Deft
+(setq deft-directory "~/Nextcloud/Documents/notes")
