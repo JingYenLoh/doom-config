@@ -44,7 +44,3 @@
 (map! :leader
       :prefix "o"
       "c" #'calc)
-
-(after! evil-snipe
-  (add-to-list 'evil-snipe-disabled-modes
-               'calc-mode))
