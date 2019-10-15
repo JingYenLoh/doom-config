@@ -22,6 +22,8 @@
 
 ;; Popups
 (load! "+popups")
+
+(setq org-directory "~/Nextcloud/Documents/org/")
 (load! "+org")
 
 ;; Web

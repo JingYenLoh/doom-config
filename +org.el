@@ -3,9 +3,8 @@
 
 ;; Org
 (after! org
-  (setq org-directory "~/Nextcloud/Documents/org/")
   (setq +org-capture-todo-file "Inbox.org"
-        org-agenda-files (list "~/Nextcloud/Documents/org")
+        ;; org-agenda-files (list "~/Nextcloud/Documents/org")
 
         ;; Refiling
         org-refile-use-outline-path 'file
