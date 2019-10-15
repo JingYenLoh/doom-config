@@ -7,3 +7,5 @@
 ;; (package! builtin-package :disable t)
 (package! org-caldav :recipe
   (:host github :repo "knatsakis/org-caldav"))
+
+(package! bison-mode)
