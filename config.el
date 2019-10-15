@@ -49,3 +49,6 @@
 
 ;; Deft
 (setq deft-directory "~/Nextcloud/Documents/notes")
+
+;; LaTeX
+(setq TeX-engine 'xetex)
