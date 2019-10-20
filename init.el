@@ -151,9 +151,9 @@
        ;;irc
        ;;(rss +org)
        ;;twitter
-       ;;(write
-       ;; +wordnut
-       ;; +langtool)
+       (write
+       +wordnut
+       +langtool)
 
        :collab
        ;;floobits
