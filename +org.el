@@ -46,6 +46,13 @@
         :prefix "e"
         "e" #'org-export-dispatch)
 
+  (when (featurep! :app write +wordnut)
+    (map! :map evil-org-mode-map
+          :localleader
+          :prefix "w"
+          "t" #'synosaurus-lookup
+          "w" #'wordnut-search))
+
   (set-popup-rules!
     '(("^\\*Org Links" :slot -1 :vslot -1 :size 2 :ttl 0)
       ("^\\*\\(?:Agenda Com\\|Calendar\\|Org \\(?:Export Dispatcher\\|Select\\)\\)"
