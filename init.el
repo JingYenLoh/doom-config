@@ -124,6 +124,7 @@
         +dragndrop
         +ipython
         +pandoc
+        +pomodoro
         +present)
        ;;perl
        ;;php
