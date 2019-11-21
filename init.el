@@ -130,7 +130,7 @@
        ;;php
        ;;plantuml
        ;;purescript
-       python
+       (python +lsp)
        ;;qt
        ;;racket
        ;;rest
