@@ -8,8 +8,11 @@
 (setq doom-localleader-key ","
       +evil-repeat-keys (cons ";" "'")
 
-      doom-theme 'doom-peacock
+      doom-theme 'doom-one-light
       doom-modeline-buffer-file-name-style 'relative-from-project
+      doom-font (font-spec :family "Roboto Mono" :size 16)
+      doom-variable-pitch-font (font-spec :family "Cantarell")
+      doom-serif-font (font-spec :family "Libre Baskerville")
 
       display-line-numbers-type 'relative
       evil-escape-key-sequence "fd"
