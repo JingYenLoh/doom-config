@@ -6,7 +6,7 @@
 
 ;; Some basic settings
 (setq doom-localleader-key ","
-      +default-repeat-keys (cons ";" "'")
+      +evil-repeat-keys (cons ";" "'")
 
       doom-theme 'doom-peacock
       doom-modeline-buffer-file-name-style 'relative-from-project
