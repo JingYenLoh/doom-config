@@ -10,7 +10,7 @@
         +childframe)
        ;;helm
        ;;ido
-       ivy
+       (ivy +icons)
 
        :ui
        deft
@@ -53,20 +53,19 @@
        :emacs
        (dired
        ;;+ranger
-       ;;+icons
-        )
+       +icons)
        electric
        vc
 
        :term
        ;;eshell
        ;;shell
-       term
+       ;; term
        vterm
 
        :tools
        ;;ansible
-       ;;debugger
+       debugger
        ;;direnv
        docker
        editorconfig
@@ -83,7 +82,7 @@
        magit
        ;;make
        pass
-       ;;pdf
+       pdf
        ;;prodigy
        ;;rgb
        ;;terraform
