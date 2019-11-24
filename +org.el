@@ -47,7 +47,7 @@
         "e" #'org-export-dispatch)
 
   (when (featurep! :app write +wordnut)
-    (map! :map evil-org-mode-map
+    (map! :map org-mode-map
           :localleader
           :prefix "w"
           "t" #'synosaurus-lookup
