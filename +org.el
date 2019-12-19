@@ -46,6 +46,11 @@
         :prefix "e"
         "e" #'org-export-dispatch)
 
+  ;; HACK to remain consistent with doom popups, and trigger org-agenda-exit to
+  ;; save my buffers
+  (map! :map evil-org-agenda-mode-map
+        "q" #'org-agenda-exit)
+
   (when (featurep! :app write +wordnut)
     (map! :map org-mode-map
           :localleader
