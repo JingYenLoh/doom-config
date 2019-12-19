@@ -55,3 +55,6 @@
 
 ;; LaTeX
 (setq TeX-engine 'xetex)
+
+;; Rust
+(setq rustic-lsp-server 'rust-analyzer)
