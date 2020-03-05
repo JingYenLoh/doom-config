@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: main
+# uuid: main
+# key: psvm
+# condition: t
+# --
+public static void main(String[] args) {
+    $0
+}

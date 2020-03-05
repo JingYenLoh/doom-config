@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: wct
+# key: wct
+# condition: t
+# --
+Loh Jing Yen
+A0202348M
+UWC2101J: Sites of Tourism
+A/P Lo Mun Hou
+${1:Assignment 1}
+${2:`(insert (format-time-string "%d"))`} ${3:`(insert (format-time-string "%B"))`} 2020
+
+$0

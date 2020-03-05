@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: public
+# uuid: public
+# key: pu
+# condition: t
+# --
+public $0

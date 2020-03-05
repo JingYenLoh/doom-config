@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: proof
+# key: proof
+# condition: t
+# --
+\begin{proof*}
+  \begin{align*}
+    $0
+  \end{align*}
+\end{proof*}

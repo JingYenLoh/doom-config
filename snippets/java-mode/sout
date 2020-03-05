@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sout
+# uuid: sout
+# key: sout
+# condition: t
+# --
+System.out.println($0);
