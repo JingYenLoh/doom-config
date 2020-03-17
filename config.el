@@ -68,7 +68,6 @@
 (map! "C-S-p" 'counsel-M-x)
 
 (use-package! crux
-  :defer t
   :commands (crux-open-with)
   :bind
   ("C-c o" . crux-open-with))
