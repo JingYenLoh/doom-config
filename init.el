@@ -1,9 +1,26 @@
 ;;; init.el -*- lexical-binding: t; -*-
 ;; Copy me to ~/.doom.d/init.el or ~/.config/doom/init.el, then edit me!
 
+(defvar nero/documents-directory "~/Nextcloud/Documents"
+  "My documents directory.")
+
+;; About me
+(setq user-full-name "Jing Yen Loh"
+      user-mail-address "lohjingyen@gmail.com"
+      documents-directory nero/documents-directory)
+
+(setq langtool-bin "/usr/bin/languagetool"
+      TeX-engine 'xetex
+      org-list-allow-alphabetical t)
+
 (doom! :input
        ;;chinese
        ;;japanese
+
+       :checkers
+       grammar
+       spell
+       (syntax +childframe)
 
        :completion
        (company
@@ -21,7 +38,7 @@
        hl-todo
        hydra
        ;;indent-guides
-       modeline
+       (modeline +light)
        nav-flash
        ;;neotree
        ophints
@@ -29,32 +46,34 @@
         +all
         +defaults)
        treemacs
-       ;;pretty-code
-       ;;tabbar
+       pretty-code
+       ;;tabs
        ;;unicode
        vc-gutter
-       vi-tilde-fringe
+       ;; vi-tilde-fringe
        window-select
        workspaces
+       zen
 
        :editor
        (evil +everywhere)
        file-templates
        fold
-       ;;(format +onsave)
+       (format +onsave)
        ;;lispy
        multiple-cursors
        ;; objed
        ;;parinfer
        rotate-text
        snippets
-       ;; word-wrap
+       word-wrap
 
        :emacs
        (dired
        ;;+ranger
        +icons)
        electric
+       ibuffer
        vc
 
        :term
@@ -70,13 +89,11 @@
        docker
        editorconfig
        ;;ein
-       eval
-       (flycheck
-        +childframe)
+       (eval +overlay)
        ;;flyspell
        ;;gist
        (lookup
-        +docsets)
+        +dictionary)
        lsp
        ;;macos
        magit
@@ -105,31 +122,35 @@
        ;;elm
        emacs-lisp
        ;;ess
-       go
-       (haskell +intero)
+       ;; go
+       ;; (haskell +intero)
        ;;hy
        ;;idris
-       ;;(java +meghanada)
-       ;;javascript
+       (java +lsp)
+       (javascript +lsp)
        ;;julia
        latex
-       ;;ledger
-       ;;lua
+       ;; ledger
+       ;; lua
        markdown
        ;;nim
        ;; nix
        ;;ocaml
        (org
         +dragndrop
-        +ipython
+        ;; +gnuplot
+        ;; +jupyter
         +pandoc
         +pomodoro
-        +present)
+        ;; +present
+        )
        ;;perl
        ;;php
        ;;plantuml
        ;;purescript
-       (python +lsp)
+       (python
+        +lsp
+        +pyenv)
        ;;qt
        ;;racket
        ;;rest
@@ -139,31 +160,19 @@
        (sh +fish)
        ;;solidity
        ;;swift
-       web
-       ;;vala
+       (web +html)
 
-       ;; Applications are complex and opinionated modules that transform Emacs
-       ;; toward a specific purpose. They may have additional dependencies and
-       ;; should be loaded late.
+       :email
+       ;; (mu4e +gmail)
+       ;; notmuch
+       ;; (wanderlust +gmail)
+
        :app
-       ;;(email +gmail)
-       ;;irc
-       ;;(rss +org)
+       ;; calendar
+       ;; irc
+       ;; (rss +org)
        ;;twitter
-       (write
-       +wordnut
-       +langtool)
-
-       :collab
-       ;;floobits
-       ;;impatient-mode
 
        :config
-       ;; For literate config users. This will tangle+compile a config.org
-       ;; literate config in your `doom-private-dir' whenever it changes.
        ;;literate
-
-       ;; The default module sets reasonable defaults for Emacs. It also
-       ;; provides a Spacemacs-inspired keybinding scheme and a smartparens
-       ;; config. Use it as a reference for your own modules.
        (default +bindings +smartparens))

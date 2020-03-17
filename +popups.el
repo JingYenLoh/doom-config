@@ -14,4 +14,10 @@
 (set-popup-rule! "^ \\*Metahelp.*" :size 82 :side 'right :select t :quit t)
 (set-popup-rule! "^\\*Apropos.*" :size 82 :height 0.6 :side 'right :select t :quit t)
 (set-popup-rule! "^\\*WordNut.*" :size 82 :height 0.6 :side 'right :select t :quit t)
+(set-popup-rule! "^\\*WordNet.*" :size 82 :height 0.6 :side 'right :select t :quit t)
 (set-popup-rule! "^\\*Synonyms List.*" :size 82 :height 0.6 :side 'right :select t :quit t)
+(set-popup-rule! "^\\*lsp-help.*" :size 82 :height 0.6 :side 'right :select t :quit t)
+(set-popup-rule! "^\\*Outline*" :size 82 :side 'right :select t)
+
+(after! pdf-tools
+  (set-popup-rule! "^\\*Outline*" :size 82 :side 'right :select t))
