@@ -73,7 +73,7 @@
        ;;+ranger
        +icons)
        electric
-       ibuffer
+       ;; ibuffer
        vc
 
        :term
