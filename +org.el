@@ -45,6 +45,7 @@
 
         ;; UI
         org-bullets-bullet-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷" "☷" "☷" "☷")
+        org-startup-with-inline-images t
 
         org-highlight-latex-and-related '(latex script entities)
         org-latex-listings 'listings
