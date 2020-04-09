@@ -86,6 +86,8 @@
   (map! :map evil-org-agenda-mode-map
         "q" #'org-agenda-exit))
 
+(setq org-ellipsis " ▾")
+
 (after! deft
   (setq deft-recursive t))
 
