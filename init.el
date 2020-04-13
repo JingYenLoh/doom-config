@@ -143,7 +143,7 @@
         +pandoc
         +pomodoro
         ;; +present
-        )
+        +roam)
        ;;perl
        ;;php
        ;;plantuml

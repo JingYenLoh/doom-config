@@ -131,19 +131,6 @@
 ;;           (:name "Waiting" :todo "WAITING")))
 ;;   (org-super-agenda-mode))
 
-(use-package! org-roam
-  :commands (org-roam-insert org-roam-find-file org-roam)
-  :init
-  (setq org-roam-directory "~/Nextcloud/Documents/notes"
-        org-roam-mute-cache-build t)
-  (map! :leader
-        (:prefix "n"
-          :desc "Org-Roam-Insert" "i" #'org-roam-insert
-          :desc "Org-Roam-Find"   "/" #'org-roam-find-file
-          :desc "Org-Roam-Buffer" "r" #'org-roam))
-  :config
-  (org-roam-mode +1))
-
 (use-package! org-noter
   :defer t
   :commands

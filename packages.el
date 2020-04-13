@@ -19,10 +19,9 @@
 ;; (package! org-super-agenda)
 
 (package! org-noter)
+
 (package! org-pdftools :recipe
   (:host github :repo "fuxialexander/org-pdftools"))
 
 (package! mips-mode)
 
-(package! org-roam :recipe
-  (:host github :repo "jethrokuan/org-roam"))
