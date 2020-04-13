@@ -25,3 +25,6 @@
 
 (package! mips-mode)
 
+(package! modus-operandi-theme)
+(package! modus-vivendi-theme)
+
