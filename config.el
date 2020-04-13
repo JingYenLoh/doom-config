@@ -18,7 +18,7 @@
       evil-snipe-scope 'visible
       evil-snipe-repeat-scope 'visible)
 
-(setq +pretty-code-enabled-modes '(org-mode markdown-mode))
+;; (setq +pretty-code-enabled-modes '(org-mode markdown-mode))
 (setq +format-on-save-enabled-modes
       '(not emacs-lisp-mode  ; elisp's mechanisms are good enough
             sql-mode         ; sqlformat is currently broken
