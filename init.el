@@ -96,7 +96,7 @@
        ;;gist
        (lookup
         +dictionary)
-       lsp
+       (lsp +peek)
        ;;macos
        magit
        ;;make
