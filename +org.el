@@ -71,11 +71,13 @@
   (appendq! +pretty-code-symbols
             '(:checkbox   "☐"
               :pending    "❍"
-              :checkedbox "☑"))
+              :checkedbox "☑"
+              :property   "☸"))
   (set-pretty-symbols! 'org-mode
     :checkbox   "[ ]"
     :pending    "[-]"
-    :checkedbox "[X]")
+    :checkedbox "[X]"
+    :property   "#+PROPERTY:")
 
   (add-to-list 'org-link-abbrev-alist '("books" . "~/Nextcloud/Documents/Books/%s"))
   (add-to-list 'org-link-abbrev-alist '("mods" . "~/Nextcloud/Documents/NUS/Modules/%s"))
