@@ -20,8 +20,8 @@
        ;;japanese
 
        :checkers
-       grammar
-       spell
+       ;; grammar
+       ;; spell
        (syntax +childframe)
 
        :completion
@@ -73,7 +73,8 @@
        :emacs
        (dired
        ;;+ranger
-       +icons)
+        ;; +icons
+        )
        electric
        ;; ibuffer
        vc
@@ -88,11 +89,10 @@
        ;;ansible
        debugger
        ;;direnv
-       docker
+       ;; docker
        editorconfig
        ;;ein
        (eval +overlay)
-       ;;flyspell
        ;;gist
        (lookup
         +dictionary)
