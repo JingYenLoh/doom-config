@@ -67,10 +67,7 @@
 ;; VSCode style
 (map! "C-S-p" 'counsel-M-x)
 
-(use-package! crux
-  :commands (crux-open-with)
-  :bind
-  ("C-c o" . crux-open-with))
+(map! "C-c o" 'nero/open-with)
 
 (add-to-list 'auto-mode-alist '("\\PKGBUILD\\'" . sh-mode))
 
