@@ -18,6 +18,22 @@
       evil-snipe-scope 'visible
       evil-snipe-repeat-scope 'visible)
 
+(def-modeline-var! +modeline-pdf-page
+  '((:eval
+     (propertize
+      (format "%d/%d"
+              (eval `(pdf-view-current-page))
+              (pdf-cache-number-of-pages))
+      'face (if (+modeline-active) 'mode-line 'mode-line-inactive)))))
+
+(def-modeline! 'pdf
+  `(" " +modeline-matches
+    " " +modeline-buffer-identification
+    " " +modeline-pdf-page)
+  '(" " +modeline-modes))
+
+(set-modeline-hook! 'pdf-view-change-page-hook 'pdf)
+
 ;; (setq +pretty-code-enabled-modes '(org-mode markdown-mode))
 (setq +format-on-save-enabled-modes
       '(not emacs-lisp-mode  ; elisp's mechanisms are good enough
