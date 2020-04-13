@@ -24,7 +24,8 @@
   (interactive)
   (doom-project-browse (expand-file-name "~/Nextcloud/Documents/NUS/Modules")))
 
-(defun nero/insert-word-count-region (start end &optional ARG)
+;;;###autoload
+(defun nero/insert-word-count-region (start end &optional _)
   "Inserts the word count of a region below it in the format of (%d words)."
   (interactive (if current-prefix-arg
        (list nil nil current-prefix-arg)
