@@ -6,7 +6,6 @@
 
       doom-theme 'doom-palenight
       doom-font (font-spec :family "SF Mono" :size 16)
-      ;; doom-font (font-spec :family "Roboto Mono" :size 16)
       doom-variable-pitch-font (font-spec :family "SF Pro Display")
       doom-serif-font (font-spec :family "Libre Baskerville")
 
@@ -58,10 +57,6 @@
 
 ;; Deft
 (setq deft-directory "~/Nextcloud/Documents/notes")
-
-;; Magit
-;; (custom-set-faces!
-;;   '(magit-section-heading :family "SF Pro Display"))
 
 (setq rustic-lsp-server 'rust-analyzer)
 
