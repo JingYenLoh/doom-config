@@ -34,6 +34,9 @@
 
 (set-modeline-hook! 'pdf-view-change-page-hook 'pdf)
 
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-footer)
+
 ;; (setq +pretty-code-enabled-modes '(org-mode markdown-mode))
 (setq +format-on-save-enabled-modes
       '(not emacs-lisp-mode  ; elisp's mechanisms are good enough
