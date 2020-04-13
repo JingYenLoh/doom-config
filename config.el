@@ -10,7 +10,7 @@
       doom-variable-pitch-font (font-spec :family "SF Pro Display")
       doom-serif-font (font-spec :family "Libre Baskerville")
 
-      +doom-dashboard-banner-file (concat doom-private-dir "takagi-san.jpg")
+      ;; +doom-dashboard-banner-file (concat doom-private-dir "takagi-san.jpg")
       frame-title-format '("%b – Emacs")
 
       display-line-numbers-type nil
