@@ -28,3 +28,4 @@
 (package! modus-operandi-theme)
 (package! modus-vivendi-theme)
 
+(package! solaire-mode :disable t)
