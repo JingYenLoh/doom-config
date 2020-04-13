@@ -13,6 +13,8 @@
       TeX-engine 'xetex
       org-list-allow-alphabetical t)
 
+(setq read-process-output-max (* 1024 1024))
+
 (doom! :input
        ;;chinese
        ;;japanese
