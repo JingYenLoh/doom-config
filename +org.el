@@ -50,17 +50,17 @@
         org-highlight-latex-and-related '(latex script entities)
         org-latex-listings 'listings
         org-format-latex-header (concat org-format-latex-header
-                                        "\n\\usepackage{stix}
-\\usepackage{tikz}
-\\usetikzlibrary{automata, positioning, arrows}
-\\usepackage{amsthm}
-\\newtheorem{theorem}{Theorem}[section]
-\\newtheorem{corollary}{Corollary}[theorem]
-\\newtheorem{lemma}[theorem]{Lemma}
-\\theoremstyle{definition}
-\\newtheorem{definition}{Definition}[section]
-\\theoremstyle{remark}
-\\newtheorem*{remark}{Remark}"))
+                                        "\n\\usepackage{stix}"
+                                        "\n\\usepackage{tikz}"
+                                        "\n\\usetikzlibrary{automata, positioning, arrows}"
+                                        "\n\\usepackage{amsthm}"
+                                        "\n\\newtheorem{theorem}{Theorem}[section]"
+                                        "\n\\newtheorem{corollary}{Corollary}[theorem]"
+                                        "\n\\newtheorem{lemma}[theorem]{Lemma}"
+                                        "\n\\theoremstyle{definition}"
+                                        "\n\\newtheorem{definition}{Definition}[section]"
+                                        "\n\\theoremstyle{remark}"
+                                        "\n\\newtheorem*{remark}{Remark}"))
 
   ;; Save org buffers after performing certain actions
   (advice-add #'org-refile :after #'org-save-all-org-buffers)
