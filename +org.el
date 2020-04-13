@@ -99,6 +99,9 @@
 (setq var-pitch "Libre Baskerville"
       +zen-text-scale 0.6)
 
+(after! org-roam
+  (setq org-roam-directory  "~/Nextcloud/Documents/notes"))
+
 (add-hook 'org-mode-hook #'writeroom-mode)
 (add-hook 'writeroom-mode-hook #'+word-wrap-mode)
 (add-hook 'writeroom-mode-hook #'+org-pretty-mode)
@@ -107,8 +110,7 @@
 ;; (add-hook 'writeroom-mode-hook
 ;;           (λ! (auto-fill-mode (if writeroom-mode -1 1))))
 (add-hook 'writeroom-mode-hook
-          (λ! (solaire-mode (if writeroom-mode -1 1))
-              (setq-local line-spacing 0.5)))
+          (λ! (setq-local line-spacing 0.2)))
 (add-hook 'writeroom-mode-hook
           (λ! (hl-line-mode (if writeroom-mode -1 1))))
 
