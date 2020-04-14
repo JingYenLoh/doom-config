@@ -77,6 +77,7 @@
         )
        electric
        ;; ibuffer
+       undo
        vc
 
        :term
