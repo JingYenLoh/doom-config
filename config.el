@@ -24,7 +24,8 @@
       (format "%d/%d"
               (eval `(pdf-view-current-page))
               (pdf-cache-number-of-pages))
-      'face (if (+modeline-active) 'mode-line 'mode-line-inactive)))))
+      'face (if (+modeline-active) 'mode-line 'mode-line-inactive))))
+  "Displays the current page against the total number of pages in the PDF document.")
 
 (def-modeline! 'pdf
   `(" " +modeline-matches
