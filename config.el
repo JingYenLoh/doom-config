@@ -81,9 +81,12 @@
 (setq rustic-lsp-server 'rust-analyzer)
 
 ;; VSCode style
-(map! "C-S-p" 'counsel-M-x)
+(map! "C-S-p" #'counsel-M-x)
 
-(map! "C-c o" 'nero/open-with)
+(map! "C-c o" #'nero/open-with)
+
+(map! :leader
+      "gP" #'magit-push)
 
 (add-to-list 'auto-mode-alist '("\\PKGBUILD\\'" . sh-mode))
 
