@@ -44,7 +44,7 @@
         org-log-into-drawer t
 
         ;; UI
-        org-bullets-bullet-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷" "☷" "☷" "☷")
+        org-superstar-headline-bullets-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷" "☷" "☷" "☷")
         org-startup-with-inline-images t
 
         org-highlight-latex-and-related '(latex script entities)
