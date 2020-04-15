@@ -86,7 +86,8 @@
 (map! "C-c o" #'nero/open-with)
 
 (map! :leader
-      "gP" #'magit-push)
+      :prefix "g"
+      (:desc "Magit Push" "P"#'magit-push))
 
 (add-to-list 'auto-mode-alist '("\\PKGBUILD\\'" . sh-mode))
 
