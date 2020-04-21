@@ -93,9 +93,6 @@
 (remove-hook 'text-mode-hook #'auto-fill-mode)
 (add-hook 'text-mode-hook #'+word-wrap-mode)
 
-(after! deft
-  (setq deft-recursive t))
-
 (setq var-pitch "Libre Baskerville"
       +zen-text-scale 0.6)
 
