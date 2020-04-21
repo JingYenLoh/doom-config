@@ -90,6 +90,11 @@
 
 (setq org-ellipsis " ▾")
 
+(after! evil-org
+  (map! :map evil-org-mode-map
+      :nv "j" #'evil-next-visual-line
+      :nv "k" #'evil-previous-visual-line))
+
 (remove-hook 'text-mode-hook #'auto-fill-mode)
 (add-hook 'text-mode-hook #'+word-wrap-mode)
 
