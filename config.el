@@ -75,9 +75,6 @@
       :prefix "o"
       "c" #'calc)
 
-;; Deft
-(setq deft-directory "~/Nextcloud/Documents/notes")
-
 (setq rustic-lsp-server 'rust-analyzer)
 
 ;; VSCode style
