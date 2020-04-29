@@ -29,7 +29,7 @@
            "* TODO [[%:link][%:description]]\n\n %i" :immediate-finish t))
         org-todo-keywords
         '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
-            (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)"))
+            (sequence "WAIT(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)"))
 
         ;; Tags
         org-tag-alist '(("@school" . ?s)
