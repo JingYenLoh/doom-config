@@ -112,7 +112,6 @@
 
        :lang
        ;;agda
-       ;;assembly
        (cc +lsp)
        ;;clojure
        ;;common-lisp
