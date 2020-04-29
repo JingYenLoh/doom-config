@@ -98,8 +98,11 @@
 (remove-hook 'text-mode-hook #'auto-fill-mode)
 (add-hook 'text-mode-hook #'+word-wrap-mode)
 
-(setq var-pitch "Libre Baskerville"
-      +zen-text-scale 0.6)
+(setq +zen-text-scale 0.6)
+
+(after! mixed-pitch
+  (setq var-pitch "SF Pro Display"))
+
 
 (after! org-roam
   (setq org-roam-directory  "~/Nextcloud/Documents/notes"))
