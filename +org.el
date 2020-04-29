@@ -136,3 +136,7 @@
 
 (after! smartparens-org
   (sp-local-pair 'org-mode "$" "$"))
+
+(setq org-noter-notes-search-path '("~/Nextcloud/Documents/notes")
+      org-noter-always-create-frame nil)
+
