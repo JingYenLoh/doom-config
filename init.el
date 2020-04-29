@@ -89,6 +89,7 @@
        :tools
        ;;ansible
        debugger
+       (debugger +lsp)
        ;;direnv
        ;; docker
        editorconfig
