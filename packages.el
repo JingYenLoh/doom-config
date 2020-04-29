@@ -10,8 +10,6 @@
   (:host gitlab :repo "lohjingyen/mixed-pitch")
   :pin "0128a151d8dd2235f1c6f3bf53c9e28777440008")
 
-;; (package! crux)
-
 ;; (package! org-super-agenda)
 
 (package! mips-mode)
