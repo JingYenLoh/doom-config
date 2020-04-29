@@ -143,6 +143,7 @@
         +dragndrop
         ;; +gnuplot
         ;; +jupyter
+        +noter
         +pandoc
         +pomodoro
         ;; +present

@@ -131,12 +131,5 @@
 ;;           (:name "Waiting" :todo "WAITING")))
 ;;   (org-super-agenda-mode))
 
-(use-package! org-noter
-  :defer t
-  :commands
-  (org-noter org-noter-create-skeleton)
-  :config
-  (setq org-noter-notes-search-path '("~/Nextcloud/Documents/notes")))
-
 (after! smartparens-org
   (sp-local-pair 'org-mode "$" "$"))
