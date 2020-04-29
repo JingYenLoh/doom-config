@@ -29,7 +29,7 @@
         +childframe)
        ;;helm
        ;;ido
-       (ivy +icons)
+       ivy
 
        :ui
        ;; deft
