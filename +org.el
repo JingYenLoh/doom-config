@@ -88,6 +88,10 @@
   (map! :map evil-org-agenda-mode-map
         "q" #'org-agenda-exit))
 
+(after! yasnippet
+  (add-hook 'org-mode-hook
+            #'(lambda () (yas-activate-extra-mode 'latex-mode))))
+
 (setq org-ellipsis " ▾")
 
 (after! evil-org
