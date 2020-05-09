@@ -104,7 +104,3 @@
                 "raw/"
                 "37e9324777c31688430ae42ec1821e76d0e28b35/"
                 "eclipse-java-formatter.xml")))
-
-(use-package! mips-mode
-  :defer t
-  :mode "\\.mips$")
