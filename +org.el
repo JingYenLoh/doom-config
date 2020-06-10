@@ -99,9 +99,6 @@
       :nv "j" #'evil-next-visual-line
       :nv "k" #'evil-previous-visual-line))
 
-(remove-hook 'text-mode-hook #'auto-fill-mode)
-(add-hook 'text-mode-hook #'+word-wrap-mode)
-
 (setq +zen-text-scale 0.6)
 
 (after! mixed-pitch
