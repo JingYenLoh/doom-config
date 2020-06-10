@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: plot
+# uuid: plot
+# key: plot
+# condition: t
+# --
+#+begin_src jupyter-python :session py :results raw drawer
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = ${1:np.linspace(0.0, 2*np.sin, 100)}
+y = ${2:1 + np.sin(2*np.pi*x)}
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Title')
+
+plt.plot(${0:x, y})
+#+end_src
