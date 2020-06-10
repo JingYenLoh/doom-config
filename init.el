@@ -102,14 +102,13 @@
        ;;macos
        magit
        ;;make
-       pass
+       ;;pass
        pdf
        ;;prodigy
        ;;rgb
        ;;terraform
        ;;tmux
        ;;upload
-       ;;wakatime
 
        :lang
        ;;agda
