@@ -141,3 +141,7 @@
 (setq org-noter-notes-search-path '("~/Nextcloud/Documents/notes")
       org-noter-always-create-frame nil)
 
+
+(map! :leader
+      :prefix "n"
+      :desc "Agenda Files" "-" #'nero/browse-agenda-files)
