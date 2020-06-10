@@ -160,7 +160,7 @@
        ;;ruby
        (rust +lsp)
        ;;scala
-       (sh +fish)
+       sh
        ;;solidity
        ;;swift
        (web +html)
