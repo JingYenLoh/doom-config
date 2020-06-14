@@ -20,8 +20,8 @@
        ;;japanese
 
        :checkers
-       ;; grammar
-       ;; spell
+       ;;grammar
+       ;;spell
        (syntax +childframe)
 
        :completion
@@ -32,10 +32,10 @@
        ivy
 
        :ui
-       ;; deft
+       ;;deft
        doom
        doom-dashboard
-       ;; doom-quit
+       ;;doom-quit
        ;;fill-column
        hl-todo
        hydra
@@ -52,7 +52,7 @@
        ;;tabs
        ;;unicode
        vc-gutter
-       ;; vi-tilde-fringe
+       ;;vi-tilde-fringe
        window-select
        workspaces
        zen
@@ -64,7 +64,7 @@
        (format +onsave)
        ;;lispy
        multiple-cursors
-       ;; objed
+       ;;objed
        ;;parinfer
        rotate-text
        snippets
@@ -72,18 +72,18 @@
 
        :emacs
        (dired
-       ;;+ranger
-        ;; +icons
+        ;;+ranger
+        ;;+icons
         )
        electric
-       ;; ibuffer
+       ;;ibuffer
        undo
        vc
 
        :term
        ;;eshell
        ;;shell
-       ;; term
+       ;;term
        vterm
 
        :tools
@@ -91,7 +91,7 @@
        debugger
        (debugger +lsp)
        ;;direnv
-       ;; docker
+       ;;docker
        editorconfig
        ;;ein
        (eval +overlay)
@@ -124,28 +124,28 @@
        ;;elm
        emacs-lisp
        ;;ess
-       ;; go
        ;; (haskell +intero)
+       ;;go
        ;;hy
        ;;idris
        ;;(java +lsp)
        (javascript +lsp)
        ;;julia
        latex
-       ;; ledger
        lua
+       ;;ledger
        markdown
        ;;nim
-       ;; nix
+       ;;nix
        ;;ocaml
        (org
         +dragndrop
-        ;; +gnuplot
         ;; +jupyter
+        ;;+gnuplot
         +noter
         +pandoc
         +pomodoro
-        ;; +present
+        ;;+present
         +roam)
        ;;perl
        ;;php
@@ -163,17 +163,17 @@
        sh
        ;;solidity
        ;;swift
-       (web +html)
+       web
 
        :email
-       ;; (mu4e +gmail)
-       ;; notmuch
-       ;; (wanderlust +gmail)
+       ;;(mu4e +gmail)
+       ;;notmuch
+       ;;(wanderlust +gmail)
 
        :app
-       ;; calendar
-       ;; irc
-       ;; (rss +org)
+       ;;calendar
+       ;;irc
+       ;;(rss +org)
        ;;twitter
 
        :config

@@ -1,6 +1,5 @@
 ;;; ~/.doom.d/+org.el -*- lexical-binding: t; -*-
 
-
 ;; Org
 (after! org
   (setq +org-capture-todo-file "Inbox.org"
@@ -49,7 +48,25 @@
 
         org-highlight-latex-and-related '(latex script entities)
         org-latex-listings 'listings
-        org-format-latex-header (concat org-format-latex-header
+        org-format-latex-header (concat "\\documentclass{article}"
+                                        "\n\\usepackage[usenames]{color}"
+                                        "\n[PACKAGES]"
+                                        "\n[DEFAULT-PACKAGES]"
+                                        "\n\\pagestyle{empty}             % do not remove"
+                                        "\n% The settings below are copied from fullpage.sty"
+                                        "\n\\setlength{\\textwidth}{\\paperwidth}"
+                                        "\n\\addtolength{\\textwidth}{-3cm}"
+                                        "\n\\setlength{\\oddsidemargin}{1.5cm}"
+                                        "\n\\addtolength{\\oddsidemargin}{-2.54cm}"
+                                        "\n\\setlength{\\evensidemargin}{\\oddsidemargin}"
+                                        "\n\\setlength{\\textheight}{\\paperheight}"
+                                        "\n\\addtolength{\\textheight}{-\\headheight}"
+                                        "\n\\addtolength{\\textheight}{-\\headsep}"
+                                        "\n\\addtolength{\\textheight}{-\\footskip}"
+                                        "\n\\addtolength{\\textheight}{-3cm}"
+                                        "\n\\setlength{\\topmargin}{1.5cm}"
+                                        "\n\\addtolength{\\topmargin}{-2.54cm}"
+                                        "\n\\usepackage[a4paper, margin={0.1in, 0.1in}]{geometry}"
                                         "\n\\usepackage{stix}"
                                         "\n\\usepackage{tikz}"
                                         "\n\\usetikzlibrary{automata, positioning, arrows}"
