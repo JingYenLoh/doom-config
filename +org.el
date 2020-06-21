@@ -79,6 +79,8 @@
                                         "\n\\theoremstyle{remark}"
                                         "\n\\newtheorem*{remark}{Remark}"))
 
+  (add-to-list 'org-modules 'org-habit)
+
   ;; Save org buffers after performing certain actions
   (advice-add #'org-refile :after #'org-save-all-org-buffers)
   (advice-add #'org-agenda-exit :around 'doom-shut-up-a)
